@@ -1,9 +1,18 @@
-country_code = {'pakistan' : '0092',
-                 'Australia' : '0025', 
-                 'Bangledesh' : '0880'}
+# Sample dictionary
+test_dict = {
+    'a': 10,
+    'b': 20,
+    'c': 10,
+    'd': 30,
+    'e': 10,
+    'f': 40
+}
 
-print("country code for pakistan -")
-print(country_code.get('pakistan', 'Not found'))
+# Value to find frequency of
+value_to_check = 10
 
-print("country code for japan -")
-print(country_code.get('japan', 'Not found'))
+# Count frequency of the value
+frequency = list(test_dict.values()).count(value_to_check)
+
+# Display result
+print(f"The frequency of value {value_to_check} is: {frequency}")
